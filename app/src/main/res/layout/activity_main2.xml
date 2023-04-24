@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/warna_putih_abu"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/tv_judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/jarak_25dp"
+        android:layout_marginTop="@dimen/text_size_40dp"
+        android:layout_marginRight="@dimen/jarak_25dp"
+        android:text="Kode Keluarga"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_ketikan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/jarak_25dp"
+        android:layout_marginTop="@dimen/jarak_10dp"
+        android:layout_marginRight="@dimen/jarak_25dp"
+        android:text="@string/ketikkan_kode_keluarga_yang_ayah_bunda_miliki_disini"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_judul" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tf_isi"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ketikan"
+            android:layout_marginTop="@dimen/jarak_20dp"
+            app:boxCornerRadiusTopStart="@dimen/jarak_30dp"
+            app:boxCornerRadiusTopEnd="@dimen/jarak_30dp"
+            app:boxCornerRadiusBottomStart="@dimen/jarak_30dp"
+            app:boxCornerRadiusBottomEnd="@dimen/jarak_30dp"
+            app:boxStrokeWidth="@dimen/jarak_2dp"
+            app:boxStrokeColor="@color/black"
+            android:layout_marginLeft="@dimen/jarak_25dp"
+            android:layout_marginRight="@dimen/jarak_25dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/masukan_kode"
+                android:gravity="center"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/black"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/tv_dengan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/jarak_25dp"
+        android:layout_marginTop="@dimen/jarak_25dp"
+        android:layout_marginRight="@dimen/jarak_25dp"
+        android:text="@string/dengan_menekan_tombol_masuk_berarti_anda_menyetujui"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tf_isi" />
+
+
+    <TextView
+        android:id="@+id/tv_ketentuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/jarak_53dp"
+        android:text="@string/ketentuan_pengguna"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_dengan" />
+
+    <TextView
+        android:id="@+id/tv_dan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/jarak_3dp"
+        android:text="@string/dan"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14sp"
+        app:layout_constraintStart_toEndOf="@id/tv_ketentuan"
+        app:layout_constraintTop_toBottomOf="@id/tv_dengan" />
+
+
+    <TextView
+        android:id="@+id/tv_kebijakan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/jarak_3dp"
+        android:text="@string/kebijakan_data"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/tv_dan"
+        app:layout_constraintTop_toBottomOf="@id/tv_dengan" />
+
+    <TextView
+        android:id="@+id/tv_kami"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/jarak_3dp"
+        android:text="@string/kami"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14sp"
+        app:layout_constraintStart_toEndOf="@id/tv_kebijakan"
+        app:layout_constraintTop_toBottomOf="@id/tv_dengan" />
+
+    <Button
+        style="@style/Widget.Material3.Button.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/jarak_20dp"
+        android:layout_marginTop="@dimen/jarak_18dp"
+        android:layout_marginRight="@dimen/jarak_20dp"
+        android:backgroundTint="@color/warna_kuning"
+        android:text="@string/mulai"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_dan" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_belum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/jarak_30dp"
+                android:text="@string/belum_punya_kode_keluarga"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <Button
+                android:id="@+id/bt_beli"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/jarak_25dp"
+                android:layout_marginTop="@dimen/jarak_20dp"
+                android:layout_marginRight="@dimen/jarak_25dp"
+                android:layout_marginBottom="@dimen/jarak_30dp"
+                android:backgroundTint="@color/warna_biru"
+                android:text="Beli Kode Keluarga Disini"
+                android:textSize="@dimen/text_size_16sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
