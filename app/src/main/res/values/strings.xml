@@ -10,4 +10,8 @@
     <string name="belum_punya_kode_keluarga">Belum punya kode keluarga?</string>
     <string name="kami">kami</string>
     <string name="ketikkan_kode_keluarga_yang_ayah_bunda_miliki_disini">Ketikkan kode keluarga yang Ayah Bunda miliki disini</string>
+    <string name="nama_panggilan_kamu">Nama Panggilan Kamu</string>
+    <string name="umur_kamu">Umur Kamu</string>
+    <string name="masuk">Masuk</string>
+    <string name="selanjutnya">Selanjutnya</string>
 </resources>

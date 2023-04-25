@@ -25,6 +25,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:textColor="@color/black"
+        android:paddingLeft="@dimen/jarak_20dp"
+        android:paddingRight="@dimen/jarak_20dp"
         android:textSize="@dimen/text_size_22sp"
         android:textStyle="bold"
         android:gravity="center"/>
@@ -35,7 +37,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:background="@color/white">
+        android:background="@color/white"
+         android:backgroundTint="@color/white">
 
         <Button
             android:id="@+id/bt_mulai"

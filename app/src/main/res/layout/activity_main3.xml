@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/jarak_25dp"
+    android:background="@color/warna_putih_abu"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/tv_namapang"
+        android:layout_marginTop="@dimen/jarak_30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nama_panggilan_kamu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/text_size_25sp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/et_satu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contoh : Budi"
+        android:textColorHint="@color/warna_abu"
+        android:backgroundTint="@color/warna_abu"
+        android:textColor="@color/warna_hitam"
+        android:layout_marginTop="@dimen/jarak_10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_namapang" />
+
+    <TextView
+        android:layout_marginTop="@dimen/jarak_25dp"
+        android:id="@+id/tv_umurkamu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/umur_kamu"
+        android:textSize="@dimen/jarak_25sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_satu"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contoh : 12"
+        android:textColor="@color/warna_hitam"
+        android:textColorHint="#bababb"
+        android:backgroundTint="#bababb"
+        android:layout_marginTop="@dimen/jarak_10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_umurkamu"
+        />
+
+    <Button
+        android:id="@+id/bt_selanjutnya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Widget.Material3.Button.Icon"
+        android:backgroundTint="@color/warna_kuning"
+        android:text="@string/selanjutnya"
+        android:paddingLeft="@dimen/jarak_68dp"
+        android:paddingRight="@dimen/jarak_68dp"
+        android:layout_marginBottom="@dimen/jarak_10dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_16sp"
+        android:textStyle="bold"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

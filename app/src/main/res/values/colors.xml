@@ -10,4 +10,7 @@
     <color name="warna_kuning">#ffe41e</color>
     <color name="warna_biru">#494dea</color>
     <color name="warna_putih_abu">#f8f8f8</color>
+    <color name="warna_gunmetal">#525b60</color>
+    <color name="warna_abu">#bababb</color>
+    <color name="warna_hitam">#000000</color>
 </resources>
